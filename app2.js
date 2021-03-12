@@ -11,9 +11,12 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      res.write('<table> <tr> <td> <th>Location</th> </td> <td> <th>Number of hours</th> </td> <td> <th>Amount of Money</th> </td> </tr> \n')
+      res.write('<tr> <td>&nbsp;</td> <td>Disneyland</td> <td>&nbsp;</td> <td>2Hrs</td> <td>&nbsp;</td> <td>100$</td> </tr> \n')
+      res.write('<tr> <td>&nbsp;</td> <td>CloudGate</td> <td>&nbsp;</td> <td>4Hrs</td> <td>&nbsp;</td> <td>200$</td> </tr> \n')  
+      res.write('<tr> <td>&nbsp;</td> <td>PanamaBeach</td> <td>&nbsp;</td> <td>6Hrs</td> <td>&nbsp;</td> <td>300$</td> </tr>\n')  
+      res.write('<tr> <td>&nbsp;</td> <td>BayArea</td> <td>&nbsp;</td> <td>8Hrs</td> <td>&nbsp;</td> <td>400$</td> </tr>\n')
+      res.write('</table>')
       res.end('</body></html>')
       //Close the response
     }                           
