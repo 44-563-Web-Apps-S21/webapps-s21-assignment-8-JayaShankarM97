@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Collection Page</title></head>
+    <body>
+        <h1>JayaShankar Mangina collection</h1>
+        <button onclick="fetchArray()">Fetch Random Element</button><br>
+        <div id = "result">The result is here</div>
+
+
+        <script>
+            function fetchArray(){
+            fetch(`http://127.0.0.1:3001`).then( (res) => {return res.text()}).then((text) => {document.getElementById("result").innerHTML=text})
+        }
+        </script>
+    </body>
+</html>
